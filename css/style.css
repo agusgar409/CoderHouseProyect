@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #323232;
+  }
+
+@font-face {
+    font-family: 'GodOfWar';
+    src: url('/assets/GODOFWAR.TTF');
+}
+p{
+    font-family: 'GodOfWar';
+}
+
+.logo{
+
+    height: 40px;
+
+}
+
+header{
+    width: 100%;
+}
+
+body {
+    margin: 0;
+  }
+  
+nav {
+    height: 44px;
+    background: #323232;
+    
+}
+  
+nav ul {
+    display: flex;
+    height: 44px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    position: sticky;
+}
+  
+  
+nav a {
+    display: block;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer{
+    background-color: cadetblue;
+}
+
+.cover-img{
+    width: 100%;
+}
+
+.introduction{
+    
+}
+
+.mini-revew{
+    color: aliceblue;
+    font-size: xx-large;
+}
+
+
