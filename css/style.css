@@ -8,14 +8,13 @@
     font-family: 'GodOfWar';
     src: url('/assets/GODOFWAR.TTF');
 }
-p{
+
+.font-god{
     font-family: 'GodOfWar';
 }
 
 .logo{
-
     height: 40px;
-
 }
 
 header{
@@ -33,14 +32,23 @@ nav {
 }
   
 nav ul {
-    display: flex;
-    height: 44px;
+    
+    /*display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;*/
+    height: 44px;
     padding: 0;
     margin: 0 auto;
     list-style-type: none;
     position: sticky;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    padding: 8px;
 }
   
   
@@ -59,10 +67,6 @@ footer{
 
 .cover-img{
     width: 100%;
-}
-
-.introduction{
-    
 }
 
 .mini-revew{
