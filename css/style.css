@@ -14,7 +14,7 @@
 }
 
 
-
+/*  NAVBAR */
 .logo{
     height: 48px;
     background-color: #2c2424;
@@ -25,20 +25,16 @@
 }
 
 header{
-    width: 100%;
-    
+    width: 100%; 
 }
 
-body {
-    margin: 0;
-  }
-  
 nav {
     height: 70px;
     width: 100%;
     background-color: #2c2424;
     position: sticky;
 }
+
   
 .nav-directions {
     
@@ -78,13 +74,18 @@ nav a {
     transition: 0.3s;
 }
 
-footer{
-    background-color: cadetblue;
+/*NAVBAR*/
+
+
+/* BODY */
+body {
+    margin: 0;
 }
 
 .cover-img{
     width: 100%;
 }
+
 
 .mini-revew{
     color: aliceblue;
@@ -103,3 +104,12 @@ footer{
     align-items: center;
 }
 
+/* BODY */
+
+
+/* FOOTER */
+footer{
+    background-color: cadetblue;
+}
+
+/* FOOTER */
