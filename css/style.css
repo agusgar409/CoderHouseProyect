@@ -2,7 +2,30 @@
     margin: 0;
     padding: 0;
     background-color: #323232;
-  }
+}
+
+.index-grid{
+    display:grid;
+    grid-template-columns: 2fr;
+}
+
+.information-grid{
+    display: grid;
+    grid-template-columns: 2fr;
+}
+
+.faq-grid{
+    display: grid;
+}
+
+.menu-grid{
+    display: grid;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 2fr;
+}
 
 @font-face {
     font-family: 'GodOfWar';
@@ -15,13 +38,21 @@
 
 
 /*  NAVBAR */
+
+.nav-bar{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
 .logo{
     height: 48px;
     background-color: #2c2424;
 }
 
 .link-logo{
-    background-color: #2c2424;
+    grid-column: 1;
 }
 
 header{
@@ -38,14 +69,19 @@ nav {
   
 .nav-directions {
     
-    /*display: flex;
-    justify-content: space-around;
-    align-items: center;*/
     height: 44px;
     padding: 0;
     margin: 0 auto;
     list-style-type: none;
     background-color: #2c2424;
+    
+    display: grid;
+    grid-column: 2/3;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0.5rem;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    justify-items: center;
     
 }
 
@@ -54,15 +90,16 @@ li{
 }
 
 .links-navbar{
-    padding: 8px;
+    padding: 5px;
     text-decoration: none;
     color: white;
-    font-size:x-large;
+    font-size:20px;
     background-color: #2c2424;
 }
 
 .links-navbar:hover{
-    background-color: black;
+    background-color: white;
+    color: #2c2424;
 }
   
   
@@ -104,12 +141,45 @@ body {
     align-items: center;
 }
 
+.fill-contact-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.main-contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-contact{
+    width: 300px;
+}
+
+.envio-cv{
+    text-align: center;
+}
+
 /* BODY */
 
 
 /* FOOTER */
-footer{
-    background-color: cadetblue;
+
+.logos-media{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.logo{
+    height: 50px;
+    background-color: #323232;
+}
+
+.label-redes-sociales{
+    text-align: center;
+    color: aliceblue;
 }
 
 /* FOOTER */

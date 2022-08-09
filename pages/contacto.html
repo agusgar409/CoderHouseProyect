@@ -7,46 +7,51 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
-<body>
-    <header>
-        <nav class="nav-bar">
-            <ul class="nav-directions font-god">
+    <body class="contact-grid">
+        <header>
+            <nav class="nav-bar">
                 <a class="link-logo" href="../index.html"><img class="logo" src="/assets/hamburger-food-with-viking-logo-design-icon-symbol-illustration-vector.jpg" alt="logo" ></a>
-                <li><a class="links-navbar" href="/pages/nosotros.html">Nosotros</a></li>
-                <li><a class="links-navbar" href="/pages/menu.html">Menu</a></li>
-                <li><a class="links-navbar" href="/pages/contacto.html">Contacto</a></li>
-                <li><a class="links-navbar" href="/pages/faq.html">FAQ</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="formulario">
-            <form action="">
-                <input placeholder="NOMBRE" type="text" name="nombre" id="incercion-texto">
-                <input placeholder="APELLIDO" type="text" name="apellido" id="incercion-texto">
-                <input placeholder="EMAIL" type="email" name="email" id="incercion-texto">
-                <textarea placeholder="Escribinos tu consulta!" name="textarea" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="enviar">
-            </form>
-        </div>
-        <div class="envio-cv">
-            <h2 class="texto-cv font-god">Si queres unirtenos, envia tu CV a:</h2>
-            <h3 class="email font-god"><a href="#">emailEmpresa@gmail.com</a></h3>
-        </div>
-    </main>
-    <footer>
-        <div class="footer-redes-sociales">
-            <h2 class="label-redes-sociales" for="">Seguinos!</h2>
-            <a href="#">
-                <img height="50px" class="logo-instagram" src="/assets/logo-instagram-png-2445.png" alt="logo-instagram">
-            </a>
-            <a href="#">
-                <img height="50px" class="logo-twitter" src="/assets/logo-twitter-png-5860.png" alt="logo-twitter">
-            </a>
-            <a href="#">
-                <img height="50px" class="logo-facebook" src="/assets/facebook-logo-493.png" alt="logo-facebook">
-            </a>
-        </div>
-    </footer>
-</body>
+                <ul class="nav-directions font-god">
+                    <li><a class="links-navbar" href="/pages/nosotros.html">Nosotros</a></li>
+                    <li><a class="links-navbar" href="/pages/menu.html">Menu</a></li>
+                    <li><a class="links-navbar" href="/pages/contacto.html">Contacto</a></li>
+                    <li><a class="links-navbar" href="/pages/faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-contact">
+            <img src="/assets/burgerInFace.jpg" class="image-contact"/>
+            <div class="fill-contact-grid">
+                <div class="formulario">
+                    <form action="">
+                        <input placeholder="NOMBRE" type="text" name="nombre" id="incercion-texto">
+                        <input placeholder="APELLIDO" type="text" name="apellido" id="incercion-texto">
+                        <input placeholder="EMAIL" type="email" name="email" id="incercion-texto">
+                        <textarea placeholder="Escribinos tu consulta!" name="textarea" id="" cols="30" rows="10"></textarea>
+                        <input type="submit" value="enviar">
+                    </form>
+                </div>
+                <div class="envio-cv">
+                    <h2 class="texto-cv font-god">Si queres unirtenos, envia tu CV a:</h2>
+                    <h3 class="email font-god"><a href="#">emailEmpresa@gmail.com</a></h3>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="links-social-media">
+                <h2 class="label-redes-sociales" for="">Seguinos!</h2>
+                <div class="logos-media">
+                    <a href="#">
+                        <img class="logo" src="/assets/logo-instagram-png-2445.png" alt="logo-instagram">
+                    </a>
+                    <a href="#">
+                        <img class="logo" src="/assets/logo-twitter-png-5860.png" alt="logo-twitter">
+                    </a>
+                    <a href="#">
+                        <img class="logo" src="/assets/facebook-logo-493.png" alt="logo-facebook">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
