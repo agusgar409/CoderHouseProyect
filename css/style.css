@@ -119,10 +119,6 @@ body {
     width: 100%;
 }
 
-main{
-    background: -moz-radial-gradient();
-}
-
 .mini-revew{
     display: flex;
     color: aliceblue;
@@ -169,6 +165,19 @@ main{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
+}
+
+
+.paragraph{
+    text-align: center;
+    padding: 55px 190px 16px 190px;
+    margin: 0;
+}
+
+.video-index{
+    margin-top: 50px;
+    height: 500px ;
+    width: 700px;
 }
 
 /* BODY */
@@ -233,7 +242,7 @@ main{
     }
 
     img.logo{
-        height:100px
+        height:85px
     }
 
     .portada h1{
@@ -263,7 +272,7 @@ main{
     }
 
     .label-redes-sociales{
-        font-size: 80px;
+        font-size: 70px;
     }
 
     .logo-red{
