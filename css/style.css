@@ -18,10 +18,6 @@
     display: grid;
 }
 
-.menu-grid{
-    display: grid;
-}
-
 .contact-grid{
     display: grid;
     grid-template-columns: 2fr;
@@ -146,11 +142,6 @@ body {
     align-items: center;
 }
 
-.main-contact{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 .image-contact{
     width: 300px;
 }
@@ -180,6 +171,55 @@ body {
     width: 700px;
 }
 
+.FlexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 80vh;
+    overflow: auto;
+    flex-direction: column;
+}
+
+.FlexContainer div{
+    width: 100px;
+    height: 100px;
+    margin: 65px;
+    padding: 30px;
+}
+
+.main-contact{
+    display: grid;
+    grid-template-columns: 0.9fr 1.3fr;
+    grid-template-rows: 1.4fr 0.8fr;
+    gap: 6px 6px;
+    grid-template-areas: 
+        "image-contact form"
+        "image-contact cv";
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.form{
+    grid-area: form;
+
+    
+}
+
+.cv{
+    grid-area: cv;
+}
+
+.image-contact{
+    grid-area: image-contact;
+    width:100%;
+    height:100%;
+}
+
 /* BODY */
 
 
@@ -206,6 +246,11 @@ body {
 .label-redes-sociales{
     text-align: center;
     color: aliceblue;
+}
+
+.title-menu{
+    margin-top: 40px;
+    text-align: center;
 }
 
 /* FOOTER */
@@ -277,6 +322,18 @@ body {
 
     .logo-red{
         height: 100px;
+    }
+
+    .FlexContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 80vh;
+        justify-content: center;
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
     }
 
 }
