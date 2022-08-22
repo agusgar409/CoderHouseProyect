@@ -146,7 +146,7 @@ body {
     width: 300px;
 }
 
-.envio-cv{
+.email{
     text-align: center;
 }
 
@@ -189,10 +189,11 @@ body {
 
 .main-contact{
     display: grid;
-    grid-template-columns: 0.9fr 1.3fr;
-    grid-template-rows: 1.4fr 0.8fr;
+    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-rows: 0.2fr 2.2fr 0.8fr;
     gap: 6px 6px;
-    grid-template-areas: 
+    grid-template-areas:
+        "image-contact title" 
         "image-contact form"
         "image-contact cv";
     align-content: center;
@@ -207,7 +208,35 @@ body {
 .form{
     grid-area: form;
 
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.6fr 0.6fr 1.8fr 1fr;
+    gap:6px 6px;
+    grid-template-areas: 
+        "name second-name"
+        "email email"
+        "comment comment"
+        ". submit-boton";
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.name-box{
+    grid-area: name;
+}
+.second-name-box{
+    grid-area: second-name;
+}
+.email.box{
+    grid-area: email;
+}
+.comment-box{
+    grid-area: comment;
+}
+.submit-boton{
+    grid-area: submit-boton;
 }
 
 .cv{
@@ -218,6 +247,12 @@ body {
     grid-area: image-contact;
     width:100%;
     height:100%;
+}
+
+.title-contact{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    grid-area: title;
 }
 
 /* BODY */
@@ -336,6 +371,16 @@ body {
         display: none;
     }
 
+    .image-contact{
+        display: none;
+    }
+
+    .main-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 /*TABLET*/
 @media only screen and (min-width: 769px) and (max-width: 1023px){
