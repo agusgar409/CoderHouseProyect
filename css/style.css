@@ -65,6 +65,10 @@ img.logo{
     grid-column: 1;
 }
 
+.color-nav{
+    background-color: #395B64;
+}
+
 header{
     width: 100%; 
 }
