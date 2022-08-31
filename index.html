@@ -10,20 +10,55 @@
     <title>Viking Land Burger</title>
 </head>
     <body class="index-grid">
-        <header>
-            <nav class="nav-bar">
-                <a class="link-logo" href="#"><img class="logo" src="/assets/hamburger-food-with-viking-logo-design-icon-symbol-illustration-vector.jpg" alt="logo" ></a>
-                <ul class="nav-directions font-god">
-                    <li><a class="links-navbar" href="/pages/nosotros.html">Nosotros</a></li>
-                    <li><a class="links-navbar" href="/pages/menu.html">Menu</a></li>
-                    <li><a class="links-navbar" href="/pages/contacto.html">Contacto</a></li>
-                    <li><a class="links-navbar" href="/pages/faq.html">FAQ</a></li>
-                </ul>
+        <header class="bg-color-navbar"> 
+            <nav class="navbar navbar-expand-lg bg-color-navbar sticky-lg-top sticky-top">
+                <div class="container-fluid bg-color-navbar">
+                    <a class="navbar-brand bg-color-navbar" href="#"><img class="logo bg-color-navbar" src="/assets/hamburger-food-with-viking-logo-design-icon-symbol-illustration-vector.png" alt="logo" ></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIndex" aria-controls="navbarIndex" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center bg-color-navbar" id="navbarIndex">
+                        <ul class="navbar-nav bg-color-navbar">
+                            <li class="nav-item bg-color-navbar">
+                                <a class="nav-link font-god links-navbar" href="/pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item bg-color-navbar">
+                                <a class="nav-link font-god links-navbar" href="/pages/menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item bg-color-navbar">
+                                <a class="nav-link font-god links-navbar" href="/pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item bg-color-navbar">
+                                <a class="nav-link font-god links-navbar" href="/pages/faq.html">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main>
             <div class="portada">
-                <img class="cover-img" src="/assets/maxresdefault.jpg" alt="cover-image">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/assets/maxresdefault.jpg" class="d-block w-100" alt="cover-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/pexels-dana-tentis-750073.jpg" style="height: 355px;" class="d-block w-100" alt="cover-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/pexels-horizon-content-3764353.jpg" style="height: 355px;" class="d-block w-100" alt="cover-image">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
                 <h1 class="font-god title-page position-text-center">Viking Land Burguers</h1>
                 <h3 class="title-page font-god position-text-center" for="parrafo">las mejores hamburguesas nórdicas</h3>
             </div>
@@ -49,9 +84,8 @@
                 </div>
             </div>
         </footer>
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
         
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
