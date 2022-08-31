@@ -1,7 +1,15 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: #2B4865;
+    background-color: var(--color-body);
+}
+
+:root{
+    --color-body: #2B4865;
+}
+
+.color-body{
+    background-color: var(--color-body);
 }
 
 ::-webkit-scrollbar{
