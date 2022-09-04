@@ -1,16 +1,21 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: var(--color-body);
+    background-color: var(--color-primario);
 }
 
 :root{
-    --color-body: #2B4865;
-    --color-light-blue: #395B64;
+    --color-primario: #354649;
+
+    --color-secundario: #6C7A89;
+
+    --color-terciario: #A3C6C4;
+
+    --color-cuaternario: #E0E7E9;
 }
 
 .color-body{
-    background-color: var(--color-body);
+    background-color: var(--color-primario);
 }
 
 ::-webkit-scrollbar{
@@ -53,35 +58,34 @@ hr{
 /*  NAVBAR */
 body{
     header{
-        background-color: var(--color-light-blue);
+        background-color: var(--color-secundario);
         nav{
             height: 70px;
             width: 100%;
-            background-color: #395B64;
             position: sticky;
-            background-color: var(--color-light-blue);
+            background-color: var(--color-secundario);
             div{
-                background-color: var(--color-light-blue);
+                background-color: var(--color-secundario);
                 a{
                     img.logo{
                         height:50px;
-                        background-color: var(--color-light-blue);
+                        background-color: var(--color-secundario);
                     }
-                    background-color: var(--color-light-blue);
+                    background-color: var(--color-secundario);
                 }
                 div{
-                    background-color: var(--color-light-blue);
+                    background-color: var(--color-secundario);
                     ul{
-                        background-color: var(--color-light-blue);
+                        background-color: var(--color-secundario);
                         li{
-                            background-color: var(--color-light-blue); 
+                            background-color: var(--color-secundario); 
                             .links-navbar{
                                 padding: 5px;
-                                color: white;
+                                color: var(--color-cuaternario);
                                 font-size: 22px;
                                 &:hover{
                                     border-radius: 4px;
-                                    background-color: white;
+                                    background-color: var(--color-cuaternario);
                                     color: #2c2424;
                                 }
                             }
@@ -119,7 +123,7 @@ body{
     .mini-revew{
         text-align: center;
         display: flex;
-        color: aliceblue;
+        color: var(--color-cuaternario);
         font-size: xx-large;    
     }
 }
@@ -145,7 +149,7 @@ body{
 }
 
 .title-page{
-    color:aliceblue;
+    color: var(--color-cuaternario);
     margin-bottom: 10px;
     padding: 5px 0 5px 0;
 
@@ -170,7 +174,7 @@ body{
 }
 
 .paragraph{
-    color: #E7F6F2;
+    color: var(--color-cuaternario);
     text-align: center;
     margin: 0px 223px;
 
@@ -264,7 +268,7 @@ main{
 
 main{
     .title-menu{
-        color: #E7F6F2;
+        color: var(--color-cuaternario);
         padding: 40px 0px;
         text-align: center;
     }
@@ -282,15 +286,15 @@ main{
             row-gap: 50px;
             flex-direction: column;
             align-items: center;
-            background-color: var(--color-light-blue);
-            border: 5px solid #A5C9CA;
+            background-color: var(--color-secundario);
+            border: 5px solid var(--color-terciario);
             border-radius: 20px;
             padding: 46px 46px 20px 46px;
             margin: 25px;
     
             .info-hamburguesa{
-                color: #2C3333;
-                background-color: var(--color-light-blue);
+                color: var(--color-primario);
+                background-color: var(--color-secundario);
             }
         }
     }
