@@ -148,7 +148,8 @@ main {
     main .main-contact .title-contact {
       margin-top: 30px;
       margin-bottom: 20px;
-      grid-area: title; }
+      grid-area: title;
+      color: var(--color-terciario); }
     main .main-contact .image-contact {
       grid-area: image-contact;
       width: 100%;
@@ -178,10 +179,13 @@ main {
       main .main-contact .form .submit-boton {
         grid-area: submit-boton; }
 
+.form-label {
+  color: var(--color-terciario); }
+
 .cv {
   text-align: center; }
-  .cv .email {
-    text-align: center; }
+  .cv h2 {
+    color: var(--color-terciario); }
 
 /* FORM */
 /* MENU */
@@ -213,7 +217,7 @@ main .FlexContainer {
 
 /*  FAQ  */
 .accordion-body {
-  background-color: #7FB5FF; }
+  background-color: var(--color-secundario); }
 
 /* BODY */
 /* FOOTER */
@@ -222,7 +226,7 @@ main .FlexContainer {
   .links-social-media .label-redes-sociales {
     margin: 15px;
     text-align: center;
-    color: aliceblue; }
+    color: var(--color-cuaternario); }
   .links-social-media .logos-media {
     display: grid;
     grid-template-columns: auto auto auto;

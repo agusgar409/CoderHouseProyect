@@ -204,6 +204,7 @@ main{
             margin-top: 30px;
             margin-bottom: 20px;
             grid-area: title;
+            color: var(--color-terciario);
         }
     
         .image-contact{
@@ -253,11 +254,14 @@ main{
     }
 }
 
+.form-label{
+    color: var(--color-terciario);
+}
 
 .cv{
     text-align: center;
-    .email{
-        text-align: center;
+    h2{
+        color:var(--color-terciario);
     }
 }
 
@@ -303,7 +307,7 @@ main{
                 /*  FAQ  */
 
 .accordion-body{
-    background-color: #7FB5FF;
+    background-color: var(--color-secundario);
 }
 
 /* BODY */
@@ -315,7 +319,7 @@ main{
     .label-redes-sociales{
         margin: 15px;
         text-align: center;
-        color: aliceblue;
+        color: var(--color-cuaternario);
     }
     .logos-media{
         display: grid;
