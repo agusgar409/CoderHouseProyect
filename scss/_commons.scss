@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: $color-primario;
+}
+
+.color-body{
+    background-color: $color-primario;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.index-grid{
+    display:grid;
+    grid-template-columns: 2fr;
+}
+
+.information-grid{
+    display: grid;
+    grid-template-columns: 2fr;
+}
+
+.faq-grid{
+    display: grid;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 2fr;
+}
+
+@font-face {
+    font-family: 'GodOfWar';
+    src: url('/assets/GODOFWAR.TTF');
+}
+
+.font-god{
+    font-family: 'GodOfWar';
+}
+
+hr{
+    border: 2px solid azure;
+}

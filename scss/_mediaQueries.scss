@@ -1,0 +1,116 @@
+/*MEDIAQUERIE*/
+/*MOBILE*/
+@media only screen and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    .portada img{
+        display:none;
+    }
+
+    .index-grid{
+        display: grid;
+        grid-template-rows: 3.5cm 1fr auto;
+    }
+
+    header ul li{
+        ul{
+            li{
+                display: none;
+            }
+        }
+        
+    }
+
+    .portada h1{
+
+        h1{
+            text-align: center;
+            font-size:70px;
+        }
+        h3{
+            display:  none;
+        }
+        
+    }
+
+    .introduction{
+
+        display: grid;
+        grid-template-columns: none;
+        
+        grid-template-rows: auto auto;
+    }
+
+    .video-index{
+        margin-top: 2cm;
+    }
+
+    .mini-revew{
+        margin: 1cm;
+        text-align: center;
+    }
+
+    .label-redes-sociales{
+        font-size: 70px;
+    }
+
+    .logo-red{
+        height: 100px;
+    }
+
+    .FlexContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 80vh;
+        justify-content: center;
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    .image-contact{
+        display: none;
+    }
+
+    .main-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body{
+        position: absolute;
+        header{
+            position: absolute;
+            z-index: 3;
+        }
+        main{
+            position: absolute;
+            z-index: 1;
+        }
+        footer{
+            position: absolute;
+            z-index: 1;
+        }
+    }
+
+    .paragraph{
+        margin: 0px 10px;
+    }
+    
+
+
+    
+}
+/*TABLET*/
+/*@media only screen and (min-width: 769px) and (max-width: 1023px){
+}*/
+/*DESKTOP*/
+/*@media only screen and (min-width: 1024px){}*/
