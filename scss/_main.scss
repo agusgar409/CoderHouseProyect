@@ -1,0 +1,196 @@
+/*menu*/
+main{
+    .title-menu{
+        color: $color-cuaternario;
+        padding: 40px 0px;
+        text-align: center;
+    }
+    
+    .FlexContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 80vh;
+        overflow: auto;
+        flex-direction: row;
+    
+        .hamburguesa{
+            display: flex;
+            row-gap: 50px;
+            flex-direction: column;
+            align-items: center;
+            background-color: $color-secundario;
+            border: 5px solid $color-terciario;
+            border-radius: 20px;
+            padding: 46px 46px 20px 46px;
+            margin: 25px;
+    
+            .info-hamburguesa{
+                color: $color-primario;
+                background-color: $color-secundario;
+            }
+        }
+    }
+}
+/*menu*/
+
+/*form*/
+main{
+    padding-bottom: 110px;
+    .main-contact{
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        grid-template-rows: 0.2fr 2.2fr;
+        gap: 6px 6px;
+        grid-template-areas:
+            "image-contact title" 
+            "image-contact form";
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        justify-items: center;
+        align-items: center;
+   
+    
+        .title-contact{
+            margin-top: 30px;
+            margin-bottom: 20px;
+            grid-area: title;
+            color: $color-terciario;
+        }
+    
+        .image-contact{
+            grid-area: image-contact;
+            width:100%;
+            height:100%;
+    
+            img{
+                height: 700px;
+                width: 500px;
+            }
+        }
+    
+        .form{
+            grid-area: form;
+        
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.6fr 0.6fr 1.8fr 1fr;
+            gap:6px 6px;
+            grid-template-areas: 
+                "name second-name"
+                "email ."
+                "comment comment"
+                ". submit-boton";
+            align-items: center;
+            justify-items: center;
+            width: 100%;
+            height: 100%;
+    
+            .name-box{
+                grid-area: name;
+            }
+            .second-name-box{
+                grid-area: second-name;
+            }
+            .email.box{
+                grid-area: email;
+            }
+            .comment-box{
+                grid-area: comment;
+            }
+            .submit-boton{
+                grid-area: submit-boton;
+            }
+        }
+    }
+}
+
+.form-label{
+    color: $color-terciario;
+}
+
+.cv{
+    text-align: center;
+    h2{
+        color:$color-terciario;
+    }
+}
+/*form*/
+
+/*faq*/
+
+.introduction{
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+    .mini-revew{
+        text-align: center;
+        display: flex;
+        color: $color-cuaternario;
+        font-size: xx-large;    
+    }
+}
+
+.video-nosotros{
+    display:flex;
+    justify-content: center;
+}
+
+.video-size{
+    margin-top: 50px;
+    height: 500px ;
+    width: 700px;
+}
+
+
+
+
+.size-img-faq{
+    height: 500px;
+    width: 100%;
+    padding: 20px 50px;
+}
+
+.title-page{
+    color: $color-cuaternario;
+    margin-bottom: 10px;
+    padding: 5px 0 5px 0;
+
+}
+
+.position-text-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1cm;
+}
+
+.fill-contact-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.image-contact{
+    width: 300px;
+}
+
+.paragraph{
+    color: $color-cuaternario;
+    text-align: center;
+    margin: 0px 223px;
+
+
+}
+
+.accordion-body{
+    background-color: $color-secundario;
+}
+
+/*faq*/

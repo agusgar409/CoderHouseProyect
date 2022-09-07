@@ -1,16 +1,10 @@
 * {
   margin: 0px;
   padding: 0px;
-  background-color: var(--color-primario); }
-
-:root {
-  --color-primario: #354649;
-  --color-secundario: #6C7A89;
-  --color-terciario: #A3C6C4;
-  --color-cuaternario: #E0E7E9; }
+  background-color: #354649; }
 
 .color-body {
-  background-color: var(--color-primario); }
+  background-color: #354649; }
 
 ::-webkit-scrollbar {
   display: none; }
@@ -40,34 +34,33 @@
 hr {
   border: 2px solid azure; }
 
-/*  NAVBAR */
 body header {
-  background-color: var(--color-secundario); }
+  background-color: #6C7A89; }
   body header nav {
     height: 70px;
     width: 100%;
     position: sticky;
-    background-color: var(--color-secundario); }
+    background-color: #6C7A89; }
     body header nav div {
-      background-color: var(--color-secundario); }
+      background-color: #6C7A89; }
       body header nav div a {
-        background-color: var(--color-secundario); }
+        background-color: #6C7A89; }
         body header nav div a img.logo {
           height: 50px;
-          background-color: var(--color-secundario); }
+          background-color: #6C7A89; }
       body header nav div div {
-        background-color: var(--color-secundario); }
+        background-color: #6C7A89; }
         body header nav div div ul {
-          background-color: var(--color-secundario); }
+          background-color: #6C7A89; }
           body header nav div div ul li {
-            background-color: var(--color-secundario); }
+            background-color: #6C7A89; }
             body header nav div div ul li .links-navbar {
               padding: 5px;
-              color: var(--color-cuaternario);
+              color: #E0E7E9;
               font-size: 22px; }
               body header nav div div ul li .links-navbar:hover {
                 border-radius: 4px;
-                background-color: var(--color-cuaternario);
+                background-color: #E0E7E9;
                 color: #2c2424; }
 
 .nav-item {
@@ -77,60 +70,35 @@ body header {
 .nav-link {
   border-radius: 5px; }
 
-/*NAVBAR*/
-/* BODY */
-.introduction {
-  margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-items: center; }
-  .introduction .mini-revew {
-    text-align: center;
+/*menu*/
+main .title-menu {
+  color: #E0E7E9;
+  padding: 40px 0px;
+  text-align: center; }
+
+main .FlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 80vh;
+  overflow: auto;
+  flex-direction: row; }
+  main .FlexContainer .hamburguesa {
     display: flex;
-    color: var(--color-cuaternario);
-    font-size: xx-large; }
+    row-gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6C7A89;
+    border: 5px solid #A3C6C4;
+    border-radius: 20px;
+    padding: 46px 46px 20px 46px;
+    margin: 25px; }
+    main .FlexContainer .hamburguesa .info-hamburguesa {
+      color: #354649;
+      background-color: #6C7A89; }
 
-.video-nosotros {
-  display: flex;
-  justify-content: center; }
-
-.video-size {
-  margin-top: 50px;
-  height: 500px;
-  width: 700px; }
-
-.size-img-faq {
-  height: 500px;
-  width: 100%;
-  padding: 20px 50px; }
-
-.title-page {
-  color: var(--color-cuaternario);
-  margin-bottom: 10px;
-  padding: 5px 0 5px 0; }
-
-.position-text-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 1cm; }
-
-.fill-contact-grid {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  align-items: center; }
-
-.image-contact {
-  width: 300px; }
-
-.paragraph {
-  color: var(--color-cuaternario);
-  text-align: center;
-  margin: 0px 223px; }
-
-/* FORM */
+/*menu*/
+/*form*/
 main {
   padding-bottom: 110px; }
   main .main-contact {
@@ -149,7 +117,7 @@ main {
       margin-top: 30px;
       margin-bottom: 20px;
       grid-area: title;
-      color: var(--color-terciario); }
+      color: #A3C6C4; }
     main .main-contact .image-contact {
       grid-area: image-contact;
       width: 100%;
@@ -180,53 +148,76 @@ main {
         grid-area: submit-boton; }
 
 .form-label {
-  color: var(--color-terciario); }
+  color: #A3C6C4; }
 
 .cv {
   text-align: center; }
   .cv h2 {
-    color: var(--color-terciario); }
+    color: #A3C6C4; }
 
-/* FORM */
-/* MENU */
-main .title-menu {
-  color: var(--color-cuaternario);
-  padding: 40px 0px;
-  text-align: center; }
-
-main .FlexContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  height: 80vh;
-  overflow: auto;
-  flex-direction: row; }
-  main .FlexContainer .hamburguesa {
+/*form*/
+/*faq*/
+.introduction {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center; }
+  .introduction .mini-revew {
+    text-align: center;
     display: flex;
-    row-gap: 50px;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--color-secundario);
-    border: 5px solid var(--color-terciario);
-    border-radius: 20px;
-    padding: 46px 46px 20px 46px;
-    margin: 25px; }
-    main .FlexContainer .hamburguesa .info-hamburguesa {
-      color: var(--color-primario);
-      background-color: var(--color-secundario); }
+    color: #E0E7E9;
+    font-size: xx-large; }
 
-/*  FAQ  */
+.video-nosotros {
+  display: flex;
+  justify-content: center; }
+
+.video-size {
+  margin-top: 50px;
+  height: 500px;
+  width: 700px; }
+
+.size-img-faq {
+  height: 500px;
+  width: 100%;
+  padding: 20px 50px; }
+
+.title-page {
+  color: #E0E7E9;
+  margin-bottom: 10px;
+  padding: 5px 0 5px 0; }
+
+.position-text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1cm; }
+
+.fill-contact-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center; }
+
+.image-contact {
+  width: 300px; }
+
+.paragraph {
+  color: #E0E7E9;
+  text-align: center;
+  margin: 0px 223px; }
+
 .accordion-body {
-  background-color: var(--color-secundario); }
+  background-color: #6C7A89; }
 
-/* BODY */
-/* FOOTER */
+/*faq*/
 .links-social-media {
   padding: 40px; }
   .links-social-media .label-redes-sociales {
     margin: 15px;
     text-align: center;
-    color: var(--color-cuaternario); }
+    color: #E0E7E9; }
   .links-social-media .logos-media {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -235,7 +226,6 @@ main .FlexContainer {
       padding: 5px;
       height: 50px; }
 
-/* FOOTER */
 /*MEDIAQUERIE*/
 /*MOBILE*/
 @media only screen and (max-width: 768px) {
