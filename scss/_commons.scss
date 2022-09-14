@@ -13,8 +13,9 @@
 
     display:$display;
     align-items:$position;
-    
 }
+
+
 
 
 $commons:(
@@ -24,6 +25,14 @@ $commons:(
     color-cuaternario: $color-cuaternario,
     display: grid
 );
+
+.text-center{
+
+    width: 100%;
+    text-align: center;
+    color: map-get($commons, color-cuaternario);
+
+}
 
 .color-body{
     background-color: map-get($commons, background-color-primario);

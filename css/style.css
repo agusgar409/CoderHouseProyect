@@ -7,6 +7,11 @@
   display: grid;
   grid-template-columns: 2fr; }
 
+.text-center {
+  width: 100%;
+  text-align: center;
+  color: #E0E7E9; }
+
 .color-body {
   background-color: #354649; }
 
