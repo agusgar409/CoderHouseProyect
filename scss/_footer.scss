@@ -5,7 +5,7 @@
     .label-redes-sociales{
         margin: 15px;
         text-align: center;
-        color: $color-cuaternario;
+        color: map-get($commons, color-cuaternario);
     }
     .logos-media{
         display: grid;

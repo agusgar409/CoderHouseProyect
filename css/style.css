@@ -3,26 +3,18 @@
   padding: 0px;
   background-color: #354649; }
 
+.grid-created, .index-grid, .information-grid, .contact-grid {
+  display: grid;
+  grid-template-columns: 2fr; }
+
 .color-body {
   background-color: #354649; }
 
 ::-webkit-scrollbar {
   display: none; }
 
-.index-grid {
-  display: grid;
-  grid-template-columns: 2fr; }
-
-.information-grid {
-  display: grid;
-  grid-template-columns: 2fr; }
-
 .faq-grid {
   display: grid; }
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: 2fr; }
 
 @font-face {
   font-family: 'GodOfWar';
@@ -85,9 +77,9 @@ main .FlexContainer {
   flex-direction: row; }
   main .FlexContainer .hamburguesa {
     display: flex;
+    align-items: center;
     row-gap: 50px;
     flex-direction: column;
-    align-items: center;
     background-color: #6C7A89;
     border: 5px solid #A3C6C4;
     border-radius: 20px;
@@ -103,6 +95,7 @@ main {
   padding-bottom: 110px; }
   main .main-contact {
     display: grid;
+    align-items: center;
     grid-template-columns: 0.9fr 1.1fr;
     grid-template-rows: 0.2fr 2.2fr;
     gap: 6px 6px;
@@ -111,8 +104,7 @@ main {
     justify-content: center;
     width: 100%;
     height: 100%;
-    justify-items: center;
-    align-items: center; }
+    justify-items: center; }
     main .main-contact .title-contact {
       margin-top: 30px;
       margin-bottom: 20px;
@@ -126,13 +118,13 @@ main {
         height: 700px;
         width: 500px; }
     main .main-contact .form {
-      grid-area: form;
       display: grid;
+      align-items: center;
+      grid-area: form;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 0.6fr 0.6fr 1.8fr 1fr;
       gap: 6px 6px;
       grid-template-areas: "name second-name" "email ." "comment comment" ". submit-boton";
-      align-items: center;
       justify-items: center;
       width: 100%;
       height: 100%; }
@@ -158,15 +150,15 @@ main {
 /*form*/
 /*faq*/
 .introduction {
-  margin-bottom: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
+  margin-bottom: 20px;
+  grid-template-columns: 1fr 1fr;
   justify-items: center; }
   .introduction .mini-revew {
     text-align: center;
     display: flex;
-    color: #E0E7E9;
+    color: #A3C6C4;
     font-size: xx-large; }
 
 .video-nosotros {
@@ -184,27 +176,27 @@ main {
   padding: 20px 50px; }
 
 .title-page {
-  color: #E0E7E9;
+  color: #A3C6C4;
   margin-bottom: 10px;
   padding: 5px 0 5px 0; }
 
 .position-text-center {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   row-gap: 1cm; }
 
 .fill-contact-grid {
   display: grid;
+  align-items: center;
   grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  align-items: center; }
+  justify-items: center; }
 
 .image-contact {
   width: 300px; }
 
 .paragraph {
-  color: #E0E7E9;
+  color: #A3C6C4;
   text-align: center;
   margin: 0px 223px; }
 

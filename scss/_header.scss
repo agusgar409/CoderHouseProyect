@@ -2,34 +2,34 @@
 
 body{
     header{
-        background-color: $color-secundario;
+        background-color: map-get($commons, background-color-secundario);
         nav{
             height: 70px;
             width: 100%;
             position: sticky;
-            background-color: $color-secundario;
+            background-color: map-get($commons, background-color-secundario);
             div{
-                background-color: $color-secundario;
+                background-color: map-get($commons, background-color-secundario);
                 a{
                     img.logo{
                         height:50px;
-                        background-color: $color-secundario;
+                        background-color: map-get($commons, background-color-secundario);
                     }
-                    background-color: $color-secundario;
+                    background-color: map-get($commons, background-color-secundario);
                 }
                 div{
-                    background-color: $color-secundario;
+                    background-color: map-get($commons, background-color-secundario);
                     ul{
-                        background-color: $color-secundario;
+                        background-color: map-get($commons, background-color-secundario);
                         li{
-                            background-color: $color-secundario; 
+                            background-color: map-get($commons, background-color-secundario); 
                             .links-navbar{
                                 padding: 5px;
-                                color: $color-cuaternario;
+                                color: map-get($commons, color-cuaternario);
                                 font-size: 22px;
                                 &:hover{
                                     border-radius: 4px;
-                                    background-color: $color-cuaternario;
+                                    background-color: map-get($commons, color-cuaternario);
                                     color: #2c2424;
                                 }
                             }
