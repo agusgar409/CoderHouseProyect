@@ -4,8 +4,38 @@
     background-color: $color-primario;
 }
 
+.grid-created{
+    display: grid;
+    grid-template-columns: 2fr;
+}
+
+@mixin display-align-items($display,$position) {
+
+    display:$display;
+    align-items:$position;
+}
+
+
+
+
+$commons:(
+    background-color-primario: $color-primario,
+    background-color-secundario: $color-secundario,
+    color-terciario: $color-terciario,
+    color-cuaternario: $color-cuaternario,
+    display: grid
+);
+
+.text-center{
+
+    width: 100%;
+    text-align: center;
+    color: map-get($commons, color-cuaternario);
+
+}
+
 .color-body{
-    background-color: $color-primario;
+    background-color: map-get($commons, background-color-primario);
 }
 
 ::-webkit-scrollbar{
@@ -13,22 +43,19 @@
 }
 
 .index-grid{
-    display:grid;
-    grid-template-columns: 2fr;
+    @extend .grid-created;
 }
 
 .information-grid{
-    display: grid;
-    grid-template-columns: 2fr;
+    @extend .grid-created;
 }
 
 .faq-grid{
-    display: grid;
+    display: map-get($commons, display)
 }
 
 .contact-grid{
-    display: grid;
-    grid-template-columns: 2fr;
+    @extend .grid-created;
 }
 
 @font-face {
@@ -43,3 +70,6 @@
 hr{
     border: 2px solid azure;
 }
+
+
+

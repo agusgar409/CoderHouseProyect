@@ -15,10 +15,9 @@ main{
         flex-direction: row;
     
         .hamburguesa{
-            display: flex;
+            @include display-align-items(flex,center);
             row-gap: 50px;
             flex-direction: column;
-            align-items: center;
             background-color: $color-secundario;
             border: 5px solid $color-terciario;
             border-radius: 20px;
@@ -38,7 +37,7 @@ main{
 main{
     padding-bottom: 110px;
     .main-contact{
-        display: grid;
+        @include display-align-items(grid,center);
         grid-template-columns: 0.9fr 1.1fr;
         grid-template-rows: 0.2fr 2.2fr;
         gap: 6px 6px;
@@ -50,7 +49,6 @@ main{
         width: 100%;
         height: 100%;
         justify-items: center;
-        align-items: center;
    
     
         .title-contact{
@@ -72,9 +70,9 @@ main{
         }
     
         .form{
+            @include display-align-items(grid,center);
+            
             grid-area: form;
-        
-            display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 0.6fr 0.6fr 1.8fr 1fr;
             gap:6px 6px;
@@ -83,7 +81,6 @@ main{
                 "email ."
                 "comment comment"
                 ". submit-boton";
-            align-items: center;
             justify-items: center;
             width: 100%;
             height: 100%;
@@ -108,13 +105,13 @@ main{
 }
 
 .form-label{
-    color: $color-terciario;
+    color: map-get($commons, color-terciario);
 }
 
 .cv{
     text-align: center;
     h2{
-        color:$color-terciario;
+        color:map-get($commons,color-terciario);
     }
 }
 /*form*/
@@ -122,16 +119,15 @@ main{
 /*faq*/
 
 .introduction{
+    @include display-align-items(grid,center);
     margin-bottom: 20px;
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     justify-items: center;
 
     .mini-revew{
         text-align: center;
         display: flex;
-        color: $color-cuaternario;
+        color: map-get($commons, color-terciario);
         font-size: xx-large;    
     }
 }
@@ -157,24 +153,22 @@ main{
 }
 
 .title-page{
-    color: $color-cuaternario;
+    color: map-get($commons, color-terciario);
     margin-bottom: 10px;
     padding: 5px 0 5px 0;
 
 }
 
 .position-text-center{
-    display: flex;
+    @include display-align-items(flex,center);
     flex-direction: column;
-    align-items: center;
     row-gap: 1cm;
 }
 
 .fill-contact-grid{
-    display: grid;
+    @include display-align-items(grid,center);
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-    align-items: center;
 }
 
 .image-contact{
@@ -182,7 +176,7 @@ main{
 }
 
 .paragraph{
-    color: $color-cuaternario;
+    color: map-get($commons, color-terciario);
     text-align: center;
     margin: 0px 223px;
 
@@ -190,7 +184,7 @@ main{
 }
 
 .accordion-body{
-    background-color: $color-secundario;
+    background-color: map-get($commons, background-color-secundario);
 }
 
 /*faq*/
