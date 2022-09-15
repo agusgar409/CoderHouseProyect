@@ -1,0 +1,29 @@
+En el archivo index.html sumé el SEO con las siguientes características:
+	-agregue un meta description con la descripcion: "Las mejores hamburguesas ambientadas en la epoca vikinga, con personajes y lugares mitologicos."
+	-agregue un meta keyword con las palabras clave para la pagina de mi sitio: "hamburguesa,vikingos,carne"
+	-un h1 en body con texto: "Viking Land Burguers"
+	-un h3 en body con texto: "las mejores hamburguesas nórdicas"
+
+
+En el archivo contacto.html sumé
+
+	-agregue un meta description con la descripcion: "nuestros contactos para que puedas comunicarte y realizar cualquier consulta o reclamo"
+	-agregue un meta keyword con las palabras clave para la pagina de mi sitio: "consultas,cv,trabajo,mail,telefono,numero"
+	-un h1 en body con texto: "Contactate con nosotros!!"
+	-un h2 en body con texto: "Si queres ser parte de nuestro equipo, envia tu CV a:"
+	-un h3 en body con texto: "emailEmpresa@gmail.com"
+
+En el archivo faq.html sumé:
+	-agregue un meta description con la descripcion: "Preguntas frecuentes de nuestros locales y productos"
+	-agregue un meta keyword con las palabras clave para la pagina de mi sitio: "pregunta,dudas,respuestas"
+	-un h1 en body con texto: "Preguntas frecuentes!"
+
+En el archivo menu.html sumé:
+	-agregue un meta description con la descripcion: "Nuestro menu basado en personajes de la epoca vikinga"
+	-agregue un meta keyword con las palabras clave para la pagina de mi sitio: "hamburguesas,vikingos,precio,menu,ingredientes"
+	-un h2 en body con texto: "Nuestro menu vikingo:"
+
+En el archivo nosotros.html sumé:
+	-agregue un meta description con la descripcion: "Informacion acerca de nosotros, a que nos dedicamos, porque, etc.".
+	-agregue un meta keyword con las palabras clave para la pagina de mi sitio: "historia,nosotros".
+	-un h1 en body con texto: "Informacion sobre nosotros!"
