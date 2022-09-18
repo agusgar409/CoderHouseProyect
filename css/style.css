@@ -1,7 +1,6 @@
 * {
   margin: 0px;
-  padding: 0px;
-  background-color: #354649; }
+  padding: 0px; }
 
 .grid-created, .index-grid, .information-grid, .contact-grid {
   display: grid;
@@ -68,31 +67,32 @@ body header {
   border-radius: 5px; }
 
 /*menu*/
-main .title-menu {
-  color: #E0E7E9;
-  padding: 40px 0px;
-  text-align: center; }
-
-main .FlexContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  height: 80vh;
-  overflow: auto;
-  flex-direction: row; }
-  main .FlexContainer .hamburguesa {
+main {
+  background-color: #354649; }
+  main .title-menu {
+    color: #E0E7E9;
+    padding: 40px 0px;
+    text-align: center; }
+  main .FlexContainer {
     display: flex;
-    align-items: center;
-    row-gap: 50px;
-    flex-direction: column;
-    background-color: #6C7A89;
-    border: 5px solid #A3C6C4;
-    border-radius: 20px;
-    padding: 46px 46px 20px 46px;
-    margin: 25px; }
-    main .FlexContainer .hamburguesa .info-hamburguesa {
-      color: #354649;
-      background-color: #6C7A89; }
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 80vh;
+    overflow: auto;
+    flex-direction: row; }
+    main .FlexContainer .hamburguesa {
+      display: flex;
+      align-items: center;
+      row-gap: 50px;
+      flex-direction: column;
+      background-color: #6C7A89;
+      border: 5px solid #A3C6C4;
+      border-radius: 20px;
+      padding: 46px 46px 20px 46px;
+      margin: 25px; }
+      main .FlexContainer .hamburguesa .info-hamburguesa {
+        color: #354649;
+        background-color: #6C7A89; }
 
 /*menu*/
 /*form*/
@@ -209,6 +209,9 @@ main {
   background-color: #6C7A89; }
 
 /*faq*/
+footer {
+  background-color: #354649; }
+
 .links-social-media {
   padding: 40px; }
   .links-social-media .label-redes-sociales {
@@ -226,15 +229,16 @@ main {
 /*MEDIAQUERIE*/
 /*MOBILE*/
 @media only screen and (max-width: 768px) {
-  * {
-    margin: 0;
-    padding: 0; }
+  navbar button .navbar-toggler-icon {
+    background-color: transparent; }
+  main div .carousel {
+    display: none; }
   .portada img {
     display: none; }
   .index-grid {
     display: grid;
     grid-template-rows: 3.5cm 1fr auto; }
-  header ul li ul li {
+  header ul li {
     display: none; }
   .portada h1 h1 {
     text-align: center;
@@ -269,17 +273,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  body {
-    position: absolute; }
-    body header {
-      position: absolute;
-      z-index: 3; }
-    body main {
-      position: absolute;
-      z-index: 1; }
-    body footer {
-      position: absolute;
-      z-index: 1; }
   .paragraph {
     margin: 0px 10px; } }
 

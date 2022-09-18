@@ -1,11 +1,24 @@
 /*MEDIAQUERIE*/
 /*MOBILE*/
 @media only screen and (max-width: 768px){
-    *{
-        margin: 0;
-        padding: 0;
+
+    navbar{
+        button{
+            .navbar-toggler-icon{
+                background-color: transparent;
+            }
+        }
     }
 
+    main{
+        div{
+            .carousel{
+                display: none;
+            }
+        }
+        
+    }
+    
     
     .portada img{
         display:none;
@@ -16,17 +29,15 @@
         grid-template-rows: 3.5cm 1fr auto;
     }
 
-    header ul li{
+    header{
         ul{
             li{
                 display: none;
             }
-        }
-        
+        } 
     }
 
     .portada h1{
-
         h1{
             text-align: center;
             font-size:70px;
@@ -85,28 +96,9 @@
         align-items: center;
     }
 
-    body{
-        position: absolute;
-        header{
-            position: absolute;
-            z-index: 3;
-        }
-        main{
-            position: absolute;
-            z-index: 1;
-        }
-        footer{
-            position: absolute;
-            z-index: 1;
-        }
-    }
-
     .paragraph{
         margin: 0px 10px;
     }
-    
-
-
     
 }
 /*TABLET*/
