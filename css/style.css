@@ -45,6 +45,7 @@ body header {
           height: 50px;
           background-color: #6C7A89; }
       body header nav div div {
+        z-index: 1;
         background-color: #6C7A89; }
         body header nav div div ul {
           background-color: #6C7A89; }
@@ -207,8 +208,11 @@ main {
   text-align: center;
   margin: 0px 223px; }
 
-.accordion-body {
-  background-color: #6C7A89; }
+.accordion-item {
+  color: var(--bs-accordion-color);
+  padding: 2% 16% 2% 16%;
+  background-color: #354649;
+  border: none; }
 
 /*faq*/
 footer {
