@@ -89,18 +89,67 @@
         display: none;
     }
 
-    .main-contact{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    main
+        .main-contact{
+            display: grid;
+            grid-template-rows: 0.2fr 2.2fr;
+            grid-template-columns: none;
+            grid-template-areas:
+            "title"
+            "form";
+            width: 100%;
+            justify-items: center;
 
-    .paragraph{
-        margin: 0px 10px;
+            .form{
+                
+                display: grid;
+                grid-area: form;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-areas: none;
+                gap: 0px;
+                width: 100%;
+                height: 100%;
+
+                .name-box{
+                    grid-row-start: 1;
+                    grid-column-start: 1;
+                    grid-row-end: 2;
+                }
+                .second-name-box{
+                    grid-row-start: 2;
+                    grid-column-start: 1;
+                    grid-row-end: 3;
+                }
+                .email-box{
+                    grid-row-start: 3;
+                    grid-column-start: 1;
+                    grid-row-end: 4;
+                }
+                .comment-box{
+                    grid-row-start: 4;
+                    grid-column-start: 1;
+                    grid-row-end: 5;
+                    margin-left: 10%;
+
+                    .form-control{
+                        width: 88%;
+                    }
+                }
+                .submit-boton{
+                    grid-row-start: 5;
+                    grid-column-start: 1;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        .paragraph{
+            margin: 0px 10px;
+        }
+        
     }
-    
-}
 /*TABLET*/
 /*@media only screen and (min-width: 769px) and (max-width: 1023px){
 }*/
