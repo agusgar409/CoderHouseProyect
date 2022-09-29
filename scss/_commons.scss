@@ -33,6 +33,10 @@ $commons:(
 
 }
 
+.adjust-text{
+    max-width: 100%;
+}
+
 .color-body{
     background-color: map-get($commons, background-color-primario);
 }

@@ -11,6 +11,9 @@
   text-align: center;
   color: #E0E7E9; }
 
+.adjust-text {
+  max-width: 100%; }
+
 .color-body {
   background-color: #354649; }
 
@@ -205,8 +208,19 @@ main {
 
 .paragraph {
   color: #A3C6C4;
-  text-align: center;
-  margin: 0px 223px; }
+  text-align: center; }
+
+iframe {
+  margin-top: 0%;
+  margin-left: 4%;
+  max-width: 60%; }
+
+.color-text {
+  color: #A3C6C4; }
+
+.center-text {
+  padding-left: 18%;
+  padding-top: 10%; }
 
 .accordion-item {
   color: var(--bs-accordion-color);

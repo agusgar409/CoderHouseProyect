@@ -181,8 +181,22 @@ main{
 .paragraph{
     color: map-get($commons, color-terciario);
     text-align: center;
-    margin: 0px 223px;
+}
 
+iframe{
+
+    margin-top: 0%;
+    margin-left: 4%;
+    max-width: 60%;
+}
+
+.color-text{
+    color: map-get($commons, color-terciario);
+}
+
+.center-text{
+    padding-left: 18%;
+    padding-top: 10%;
 
 }
 
