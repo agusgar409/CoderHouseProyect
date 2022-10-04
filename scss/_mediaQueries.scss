@@ -91,7 +91,7 @@
         display: none;
     }
 
-    main
+    main{
         .main-contact{
             display: grid;
             grid-template-rows: 0.2fr 2.2fr;
@@ -147,6 +147,8 @@
             }
         }
     }
+}
+    
 /*TABLET*/
 /*@media only screen and (min-width: 769px) and (max-width: 1023px){
 }*/
