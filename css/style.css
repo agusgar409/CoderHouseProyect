@@ -11,6 +11,9 @@
   text-align: center;
   color: #E0E7E9; }
 
+.adjust-text {
+  max-width: 100%; }
+
 .color-body {
   background-color: #354649; }
 
@@ -45,6 +48,7 @@ body header {
           height: 50px;
           background-color: #6C7A89; }
       body header nav div div {
+        z-index: 1;
         background-color: #6C7A89; }
         body header nav div div ul {
           background-color: #6C7A89; }
@@ -120,23 +124,25 @@ main {
       width: 100%;
       height: 100%; }
       main .main-contact .image-contact img {
-        height: 700px;
-        width: 500px; }
+        height: 100%;
+        width: 100%; }
     main .main-contact .form {
       display: grid;
       align-items: center;
       grid-area: form;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.6fr 0.6fr 1.8fr 1fr;
+      grid-template-rows: 0.6fr 0.6fr 1fr 1fr;
       gap: 6px 6px;
-      grid-template-areas: "name second-name" "email ." "comment comment" ". submit-boton";
+      grid-template-areas: "name second-name" "email ." "comment comment" "submit-boton submit-boton";
       justify-items: center;
       width: 100%;
       height: 100%; }
       main .main-contact .form .name-box {
-        grid-area: name; }
+        grid-area: name;
+        width: 70%; }
       main .main-contact .form .second-name-box {
-        grid-area: second-name; }
+        grid-area: second-name;
+        width: 70%; }
       main .main-contact .form .email.box {
         grid-area: email; }
       main .main-contact .form .comment-box {
@@ -175,9 +181,13 @@ main {
   height: 500px;
   width: 700px; }
 
+.accordion-body {
+  background-color: #6C7A89;
+  border-radius: 0px 0px 12px 12px; }
+
 .size-img-faq {
-  height: 500px;
-  width: 100%;
+  height: 40%;
+  width: 70%;
   padding: 20px 50px; }
 
 .title-page {
@@ -202,11 +212,25 @@ main {
 
 .paragraph {
   color: #A3C6C4;
-  text-align: center;
-  margin: 0px 223px; }
+  text-align: center; }
 
-.accordion-body {
-  background-color: #6C7A89; }
+iframe {
+  margin-top: 0%;
+  margin-left: 4%;
+  max-width: 60%; }
+
+.color-text {
+  color: #A3C6C4; }
+
+.center-text {
+  padding-left: 18%;
+  padding-top: 10%; }
+
+.accordion-item {
+  color: var(--bs-accordion-color);
+  padding: 2% 16% 2% 16%;
+  background-color: #354649;
+  border: none; }
 
 /*faq*/
 footer {
@@ -268,13 +292,46 @@ footer {
     display: none; }
   .image-contact {
     display: none; }
-  .main-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .paragraph {
-    margin: 0px 10px; } }
+  main .main-contact {
+    display: grid;
+    grid-template-rows: 0.2fr 2.2fr;
+    grid-template-columns: none;
+    grid-template-areas: "title" "form";
+    width: 100%;
+    justify-items: center; }
+    main .main-contact .form {
+      display: grid;
+      grid-area: form;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: none;
+      gap: 0px;
+      width: 100%;
+      height: 100%; }
+      main .main-contact .form .name-box {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 2; }
+      main .main-contact .form .second-name-box {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-row-end: 3; }
+      main .main-contact .form .email-box {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-row-end: 4; }
+      main .main-contact .form .comment-box {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-row-end: 5;
+        margin-left: 10%; }
+        main .main-contact .form .comment-box .form-control {
+          width: 88%; }
+      main .main-contact .form .submit-boton {
+        grid-row-start: 5;
+        grid-column-start: 1;
+        margin-top: 15px;
+        margin-bottom: 15px; } }
 
 /*TABLET*/
 /*@media only screen and (min-width: 769px) and (max-width: 1023px){
